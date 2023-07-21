@@ -1,6 +1,6 @@
 <template>
   <div class="main-container">
-    <h1>Gerenciar pedidos:</h1>
+    <h1>{{ $store.state.titles.orders }}</h1>
     <Dashboard/>
   </div>
 </template>

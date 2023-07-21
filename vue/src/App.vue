@@ -19,6 +19,9 @@
           logo_src: "./img/logo.png",
           app_name: "Make Your Burger"
         }
+      },
+      created(){
+        console.log(this.$store);
       }
    }
 </script>

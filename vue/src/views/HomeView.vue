@@ -2,7 +2,7 @@
   <div>
     <Banner/>
     <div class="main-container">
-      <h1>Monte o seu burger:</h1>
+      <h1>{{ $store.state.titles.home }}</h1>
       <p></p>
       <Form/>
     </div>
@@ -18,6 +18,14 @@ export default {
   components: {
     Banner,
     Form
+  },
+  created(){
+    const newData = {
+      param1: 'teste1',
+      param2: 'teste2',
+      param3: 'teste3'
+    }
+    this.$store.commit('testeMut',newData) 
   }
 }
 </script>
